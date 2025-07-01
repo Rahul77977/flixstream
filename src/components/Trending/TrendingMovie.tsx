@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { MdOutlineExpandMore } from 'react-icons/md';
 import useTrendingList from '@/hooks/useTrendingList';
 import MovieCard from '../ui/MovieCard';

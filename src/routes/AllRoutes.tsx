@@ -1,5 +1,5 @@
 import Player from "@/components/Player";
-import TvPlayer from "@/components/TvPlayer"; // ✅ New Component
+import TvPlayer from "@/components/TvPlayer"; 
 import Trending from "@/components/Trending/Trending";
 import MovieList from "@/components/ui/MovieList";
 import SearchList from "@/components/ui/SearchList";
@@ -14,8 +14,8 @@ const AllRoutes = () => {
       <Route path="/movies" element={<MovieList />} />
       <Route path="/tvshows" element={<TvShowList />} />
       <Route path="/search/:searchName" element={<SearchList />} />
-      <Route path="/player/:playerId" element={<Player />} /> {/* Movie */}
-      <Route path="/tvplayer/:playerId" element={<TvPlayer />} /> {/* ✅ TV Show */}
+      <Route path="/player/:playerId" element={<Player />} /> 
+      <Route path="/tvplayer/:playerId" element={<TvPlayer />} /> 
     </Routes>
   );
 };

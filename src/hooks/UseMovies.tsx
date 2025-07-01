@@ -15,8 +15,8 @@ export interface MovieResult {
 
 const useMovieList = (genres?: number | null) => {
   const [movies, setMovies] = useState<MovieResult[]>([]);
-  const [loading, setLoading] = useState(true); // Optional
-  const [error, setError] = useState(null);     // Optional
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null);     
 
   const fetchMovieList = async () => {
     try {
@@ -24,8 +24,8 @@ const useMovieList = (genres?: number | null) => {
       const res = await apiClient.get("/discover/movie", {
         params: {
           with_genres: genres ? String(genres) : undefined,
-          language: "en-US",  // recommended by TMDB
-          page: 1             // for pagination
+          language: "en-US", 
+          page: 1             
         },
       });
       setMovies(res.data.results || []);

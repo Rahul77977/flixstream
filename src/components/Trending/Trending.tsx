@@ -1,4 +1,3 @@
-import React from 'react'
 import TrendingMovie from './TrendingMovie'
 import TrendingTvshow from './TrendingTvshow'
 
